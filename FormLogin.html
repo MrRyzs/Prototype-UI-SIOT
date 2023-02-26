@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="/CSS/Login.css">
+</head>
+<body>
+  <div class="container">
+  <form id="login-form" class="form" method="POST">
+      <h2>LOG IN</h2>
+      <h2>SIOTICS MEMBER</h2>
+      <div class="form-control">
+        <label for="username">USERNAME:</label>
+        <input type="text" class="Id" id="username" placeholder="Enter username">
+      </div>
+      <div class="form-control">
+        <label for="password">PASSWORD:</label>
+        <input type="password" class="Pw" id="password" placeholder="Enter password">
+      </div>
+      <button type="submit" id="login-button" class="Login">Login</button><br>
+      <a href="#">Lupa Password</a>
+    </form>
+  </div>
+
+  <script>
+    sessionStorage.setItem('isLoggedIn', 'false');
+  </script>
+
+  <script src="/Javascript/Login.js"></script>
+</body>
+</html>

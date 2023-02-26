@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemberPage</title>
+    <link rel="stylesheet" href="/CSS/Homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/Javascript/Homepage.js"></script>
+</head>
+<body>
+    <div class="Navbar">
+        <a href="Homepage.html"><div class="Home">
+            <div class="Profile-Img"><img src="/Image/Gw dan Cosplayer Jeta.jpg"></div>
+            <div class="Profile-Name">MN Tamam</div>
+        </div></a>
+        <p class="SettingMenu"><i class="fa fa-cog" aria-hidden="true"></i></p>
+        <a href="MemberPage.html"><div class="Menu" id="active">SIOT MEMBER</div></a>
+        <a href="ProjectMaterial.html"><div class="Menu">ALL PROJECT & LEARNING MATERIAL</div></a>
+        <a href="Homepage.html"><div class="Menu">HOMEPAGE</div></a>
+    </div>
+
+    <div class="Contain">
+        <div class="MemberList">
+            <h2>SIOT MEMBER</h2>
+            <input type="text" id="Input" class="Search" onkeyup="Fungsi()" placeholder="Search Member Here...">
+            <div class="CardMemberBox" id="Sortir">
+                <div class="CardMember">
+                    <div class="CardProfile-Img"><img src="Image/"></div>
+                    <div class="CardProfile">
+                        <p><pre>Name    : </pre></p>
+                        <p><pre>class     : </pre></p>                        
+                        <p><pre>Position: </pre></p>
+                        <p><pre>Divition: </pre></p>
+                    </div>
+                </div>
+                <div class="CardMember">
+                    <div class="CardProfile-Img"><img src="Image/"></div>
+                    <div class="CardProfile">
+                        <p><pre>Name    : </pre></p>
+                        <p><pre>class     : </pre></p>                        
+                        <p><pre>Position: </pre></p>
+                        <p><pre>Divition: </pre></p>
+                    </div>
+                </div>
+                <div class="CardMember">
+                    <div class="CardProfile-Img"><img src="Image/"></div>
+                    <div class="CardProfile">
+                        <p><pre>Name    : </pre></p>
+                        <p><pre>class     : </pre></p>                        
+                        <p><pre>Position: </pre></p>
+                        <p><pre>Divition: </pre></p>
+                    </div>
+                </div>
+                <div class="CardMember">
+                    <div class="CardProfile-Img"><img src="Image/"></div>
+                    <div class="CardProfile">
+                        <p><pre>Name    : </pre></p>
+                        <p><pre>class     : </pre></p>                        
+                        <p><pre>Position: </pre></p>
+                        <p><pre>Divition: </pre></p>
+                    </div>
+                </div>
+                <div class="CardMember">
+                    <div class="CardProfile-Img"><img src="Image/"></div>
+                    <div class="CardProfile">
+                        <p><pre>Name    : </pre></p>
+                        <p><pre>class     : </pre></p>                        
+                        <p><pre>Position: </pre></p>
+                        <p><pre>Divition: </pre></p>
+                    </div>
+                </div>
+                <div class="CardMember">
+                    <div class="CardProfile-Img"><img src="Image/"></div>
+                    <div class="CardProfile">
+                        <p><pre>Name    : </pre></p>
+                        <p><pre>class     : </pre></p>                        
+                        <p><pre>Position: </pre></p>
+                        <p><pre>Divition: </pre></p>
+                    </div>
+                </div>
+                <div class="CardMember">
+                    <div class="CardProfile-Img"><img src="Image/"></div>
+                    <div class="CardProfile">
+                        <p><pre>Name    : </pre></p>
+                        <p><pre>class     : </pre></p>                        
+                        <p><pre>Position: </pre></p>
+                        <p><pre>Divition: </pre></p>
+                    </div>
+                </div>
+                <div class="CardMember">
+                    <div class="CardProfile-Img"><img src="Image/"></div>
+                    <div class="CardProfile">
+                        <p><pre>Name    : </pre></p>
+                        <p><pre>class     : </pre></p>                        
+                        <p><pre>Position: </pre></p>
+                        <p><pre>Divition: </pre></p>
+                    </div>
+                </div>
+                <div class="CardMember">
+                    <div class="CardProfile-Img"><img src="Image/"></div>
+                    <div class="CardProfile">
+                        <p><pre>Name    : </pre></p>
+                        <p><pre>class     : </pre></p>                        
+                        <p><pre>Position: </pre></p>
+                        <p><pre>Divition: </pre></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Explain">
+        </div>
+    </div>
+
+    <div class="Footer">
+        <div class="flex">
+            <div class="About">
+                <h1>Tentang Ekskul SIOT</h1>
+                <h3>Ikuti Info Ekskul Ini Di Social Media Berikut:</h3>
+                <a href="#"><span class="Black"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></span></a>
+                <a href="#"><span class="Black"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></span></a>
+                <a href="#"><span class="Black"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></span></a>
+            </div>
+        </div>
+        <div class="credit">
+            <h3><i class="fa fa-copyright" aria-hidden="true"></i>&nbsp;MrRyzs</h3>
+        </div>
+    </div>
+
+    <script>
+        let isLoggedIn = sessionStorage.getItem('isLoggedIn');
+        if (isLoggedIn !== 'true') {
+          window.location.href = 'FormLogin.html';
+        }
+    </script>
+    <script src="/Javascript/Login.js"></script>
+</body>
+</html>

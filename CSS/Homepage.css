@@ -1,0 +1,418 @@
+@font-face {
+    font-family: David Libre;
+    src: url(/Font/DavidLibre-Medium.ttf);
+}
+/*css3 design scrollbar*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);     
+    background: #666;    
+}
+::-webkit-scrollbar-thumb {
+    background: #232323;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "David Libre", serif;
+}
+
+@media screen and (max-width: 1440px){
+    /*Bagian Navbar*/
+    .Navbar{
+        background-color: #D9D9D9;
+        height: 110px;
+        width: 1440px;
+        display: inline-block;
+        position: sticky;
+        z-index: 1;
+    }
+    .Navbar a{
+        text-decoration: none;
+        color: black;
+    }
+    .Navbar .Home{
+        height: max-content;
+        align-items: center;
+        display: flex;
+        float: left;
+        padding: 17.5px;
+    }
+    .Navbar .Home .Profile-Img{
+        border-radius: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        width: 75px;
+        height: 75px;
+    }
+    .Profile-Img img{
+        width: 75px;
+        height: 75px;
+    }
+    .Profile-Name{
+        font-size: 30px;
+        margin: 0px 10px;
+    }
+    #active{
+        background-color: #c0c0c0C0;
+    }
+    .Navbar .Menu{
+        padding: 40px 30px;
+        margin: 0px;
+        float: right;
+        font-size: 30px;
+    }
+    .SettingMenu{
+        padding: 40px 30px;
+        margin-right: 20px;
+        float: right;
+        font-size: 30px;
+    }
+    .Menu:hover{
+        background-color: #b0b0b0;
+        color: white;
+    }
+
+    /*Bagian Contain*/
+    .Contain{
+        border: 1px solid;
+        margin: 35px 55px;
+        height: 636px;
+    }
+
+    /*Bagian Footer*/
+    .Footer{
+        display: flex;
+        height: 200px;
+        width: 1440;
+        background-color: #D9D9D9;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    /*Header*/
+    .Navbar{
+        background-color: #D9D9D9;
+        height: 60px;
+        width: 1600px;
+        display: inline-block;
+        position: sticky;
+    }
+    .Navbar a{
+        text-decoration: none;
+        color: black;
+    }
+    .Navbar .Home{
+        height: max-content;
+        align-items: center;
+        display: flex;
+        float: left;
+        padding: 5px;
+    }
+    .Navbar .Home .Profile-Img{
+        border-radius: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+    }
+    .Profile-Img img{
+        width: 50px;
+        height: 50px;
+    }
+    .Profile-Name{
+        font-size: 20px;
+        margin: 0px 10px;
+    }
+    #active{
+        background-color: #c0c0c0C0;
+        color: white;
+    }
+    .Navbar .Menu{
+        padding: 20px 30px;
+        margin: 0px;
+        float: right;
+        font-size: 20px;
+    }
+    .SettingMenu{
+        padding: 15px 30px;
+        margin: 0px 10px;
+        float: right;
+        font-size: 30px;
+    }
+    .Menu:hover{
+        background-color: #b0b0b0;
+        color: white;
+    }
+
+    /*Bagian Contain*/
+    /* Homepage */
+    .Contain{
+        margin: 20px 50px;
+        height: 543px;
+    }
+    .Project h1, .Material h1, .Member h1{
+        margin: 20px;
+        text-align: center;
+    }
+    .Project{
+        height: 543px;
+        width: 500px;
+        display: block;
+        float: left;
+        background-color: #D9D9D9;
+    }
+    .Project1{
+        background-color: #ffffff;
+        margin: 30px 24px;
+        padding: 10px;
+        width: 430px;
+        height: 180px;
+        display: block;
+        overflow-y: scroll;
+    }
+    .Material{
+        height: 543px;
+        width: 500px;
+        display: inline-block;
+        margin: 0px 90px;
+        background-color: #D9D9D9;
+    }
+    .Material1{
+        background-color: #ffffff;
+        margin: 50px 30px;
+        width: 430px;
+        height: 100px;
+        display: block;
+    }
+    .Material1 object{
+        width: 330px;
+        height: 100px;
+        display: inline;
+        float: right;
+    }
+    .Materi{
+        margin: 0;
+        padding: 0;
+        width: 100px;
+        display: inline-block;
+    }
+    .Materi span{
+        padding-top: 5px;
+        width: 80px;
+        display: block;
+        overflow: hidden;
+        text-align: center;
+    }
+    .Type{
+        display: inline;
+        color: #a9a9a9;
+    }
+    .Member{
+        height: 543px;
+        width: 300px;
+        display: block;
+        float: right;
+        background-color: #D9D9D9;
+    }
+    .Member1{
+        background-color: #ffffff;
+        margin: 30px 24px;
+        padding: 10px;
+        width: 230px;
+        height: 65px;
+        display: block;
+    }
+    .AProfile{
+        border-radius: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        width: 50px;
+        height: 50px;
+    }
+    .AProfile img{
+        width: 50px;
+        height: 50px;
+    }
+    .ItsProfile{
+        max-width: 150px;
+        margin-top: -46px;
+        margin-left: 65px;
+    }
+    .Member1 h3,.Sentinel,.Crimson,.Domestik,.Offline{
+        padding: 2px;
+    }
+    .Online{
+        color: lightgreen;
+    }
+    .Offline{
+        color: #b0b0b0;
+    }
+
+    /* Member Page */
+    .MemberList{
+        padding: 20px 40px;
+        max-width: 1060px;
+        max-height: 503px;
+        background-color: #D9D9D9;
+        overflow-y: scroll;
+        display: inline-block;
+    }
+    .MemberList h2{
+        padding: 10px;
+        text-align: center;
+    }
+    .Search{
+        padding: 5px;
+        border-radius: 10px;
+        margin-top: -35px;
+        margin-left: 20px;
+        float: right;
+        width: 200px;
+        height: 20px;
+    }
+    .CardMemberBox{
+        max-width: 1030px;
+        max-height: 480px;
+        width: 1030px;
+        height: 480px;
+    }
+    .CardMember{
+        margin: 20px;
+        width: 473.3px;
+        height: 140px;
+        background-color: rgba(0, 0, 0, 0.25);
+        display: inline-block;
+    }
+    .CardProfile-Img{
+        margin: 30px 20px;
+        border-radius: 100%;
+        overflow: hidden;
+        display: inline-flex;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        max-width: 140px;
+        max-height: 140px;
+    }
+    .CardProfile-Img img{
+        width: 80px;
+        height: 80px;
+    }
+    .CardProfile{
+        display: inline-block;
+        max-width: 330px;
+        max-height: 140px;
+    }
+    .CardProfile p{
+        margin: 8px;
+    }
+    .Explain{
+        border: 5px solid black;
+        float: right;
+        display: inline-flex;
+        background-color: #D9D9D9;
+        max-height: 533px;
+        max-width: 290px;
+        height: 533px;
+        width: 290px;
+    }
+
+    /* Project & Learning Material */
+    .AProject h1, .AMaterial h1, .AMember h1{
+        margin: 20px;
+        text-align: center;
+    }
+    .AProject{
+        height: 543px;
+        width: 45%;
+        margin: 0px 2.5%;
+        display: block;
+        float: left;
+        background-color: #D9D9D9;
+        max-height: 543px;
+        overflow-y: scroll;
+    }
+    .AProject1{
+        background-color: #ffffff;
+        margin: 30px 24px;
+        padding: 10px;
+        width: 89%;
+        height: 180px;
+        display: block;
+        overflow-y: scroll;
+    }
+    .AMaterial{
+        height: 543px;
+        width: 45%;
+        display: inline-block;
+        margin: 0px 2.5%;
+        background-color: #D9D9D9;
+        max-height: 543px;
+        overflow-y: scroll;
+    }
+    .AMaterial1{
+        background-color: #ffffff;
+        margin: 50px 30px;
+        width: 91%;
+        height: 100px;
+        display: block;
+    }
+    .AMaterial1 object{
+        width: 330px;
+        height: 100px;
+        display: inline;
+        float: right;
+    }
+    .AMateri{
+        margin: 0;
+        padding: 0;
+        width: 100px;
+        display: inline-block;
+    }
+    .AMateri span{
+        padding-top: 5px;
+        width: 80px;
+        display: block;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    /*Bagian Footer*/
+    .Footer{
+        height: 141.5px;
+        width: 1440;
+        background-color: #D9D9D9;
+    }
+    .flex{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .About{
+        margin: 15px;
+        padding: 10px;
+    } 
+    .Black{
+        padding: 10px;
+        color: black;
+    }
+    .Black a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+    .credit{
+        margin-top: -45px;
+        margin-right: 20px;
+        float: right;
+    }
+}

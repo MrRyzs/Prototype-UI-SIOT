@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project & Materials</title>
+    <link rel="stylesheet" href="/CSS/Homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="Navbar">
+        <a href="Homepage.html">
+            <div class="Home">
+                <div class="Profile-Img"><img src="/Image/Gw dan Cosplayer Jeta.jpg"></div>
+                <div class="Profile-Name">MN Tamam</div>
+            </div>
+        </a>
+        <p class="SettingMenu"><i class="fa fa-cog" aria-hidden="true"></i></p>
+        <a href="MemberPage.html">
+            <div class="Menu">SIOT MEMBER</div>
+        </a>
+        <a href="ProjectMaterial.html">
+            <div class="Menu" id="active">ALL PROJECT & LEARNING MATERIAL</div>
+        </a>
+        <a href="Homepage.html">
+            <div class="Menu">HOMEPAGE</div>
+        </a>
+    </div>
+    <div class="Contain">
+        <div class="AProject">
+            <h1>All Project</h1>
+            <div class="AProject1">
+                <h2>Mobil Remot</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit et eligendi corporis modi vel officiis sapiente numquam sequi, sunt distinctio delectus cum nesciunt ab? Obcaecati tempora cumque modi ut, eum nemo, blanditiis praesentium odio error voluptas quibusdam excepturi beatae sed placeat dolore vel eveniet officia corrupti inventore architecto non corporis quas dignissimos. Quo error itaque optio officia voluptatum ipsa eum quidem ut eaque sint fuga neque, labore excepturi libero placeat nemo ipsum accusantium incidunt expedita, corporis in? Sunt assumenda facere, quod labore laboriosam, quis, possimus soluta mollitia ab dolorem dolor recusandae. Pariatur nesciunt cumque eveniet eaque, officia ipsum dolorem et?</p>
+            </div>
+            <div class="AProject1">
+                <h2>Robot Tangan</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem facilis consectetur quo? Tempore placeat, repudiandae saepe rem dolorem, a ipsum esse fugit aliquid nemo tenetur nesciunt odit veritatis aut voluptates ex ad eaque veniam quibusdam, dolore sequi nisi alias earum excepturi! Quaerat, exercitationem illo, hic quos nulla recusandae dolores iure facere assumenda beatae doloribus a sequi non cumque maxime quo corrupti reprehenderit rerum numquam mollitia. Deserunt magni quo illum perferendis iusto! Magni ducimus harum repellendus blanditiis laudantium dolor nostrum totam, sunt reprehenderit autem natus quaerat! Labore corrupti repellendus ipsa nulla, error fugiat ut aspernatur deserunt reiciendis, dolore explicabo modi doloremque.</p>
+            </div>
+            <div class="AProject1">
+                <h2>PROTOTYPE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugiat eum quam eius provident, illo quas deserunt corrupti, hic eaque asperiores voluptas aliquid! Sed, odit mollitia nobis minima eaque dignissimos quae eum soluta! Rerum reiciendis praesentium, modi neque dolore inventore ab officiis sed quos! Magnam iusto ducimus autem voluptates harum quod repellat quasi error veniam dolor vitae fugit numquam, vero placeat atque impedit rerum quae maiores natus obcaecati. Illum enim accusamus ipsum odio fugiat earum temporibus magnam deserunt quisquam iste veniam quasi officiis reprehenderit, consequatur, laudantium molestiae consectetur vel nobis! Suscipit ab eveniet quidem error distinctio accusamus quas earum nihil?</p>
+            </div>
+        </div>
+        <div class="AMaterial">
+            <h1>All Learning Material</h1>
+            <div class="AMaterial1">
+                <div class="AMateri">
+                    <span>Prototype Website SIOT</span>
+                    <span class="Type">PDF</span>
+                </div>
+                <object data="/Asset/" type="application/pdf"></object>
+            </div>
+            <div class="AMaterial1">
+                <div class="AMateri">
+                    <span>Informasi Kepengurusan</span>
+                    <span class="Type">PDF</span>
+                </div>
+                <object data="/Asset/" type="application/pdf"></object>
+            </div>
+            <div class="AMaterial1">
+                <div class="AMateri">
+                    <span>Materi LCD</span>
+                    <span class="Type">PDF</span>
+                </div>
+                <object data="/Asset/" type="application/pdf"></object>
+            </div>
+            <div class="AMaterial1">
+                <div class="AMateri">
+                    <span></span>
+                    <span class="Type"></span>
+                </div>
+                <object data="/Asset/" type="application/pdf"></object>
+            </div>
+        </div>
+    </div>
+    <div class="Footer">
+        <div class="flex">
+            <div class="About">
+                <h1>Tentang Ekskul SIOT</h1>
+                <h3>Ikuti Info Ekskul Ini Di Social Media Berikut:</h3>
+                <a href="#"><span class="Black"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></span></a>
+                <a href="#"><span class="Black"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></span></a>
+                <a href="#"><span class="Black"><i class="fa fa-facebook-square fa-2x"aria-hidden="true"></i></span></a>
+            </div>
+        </div>
+        <div class="credit">
+            <h3><i class="fa fa-copyright" aria-hidden="true"></i>&nbsp;MrRys</h3>
+        </div>
+    </div>
+    
+    <script>
+        let isLoggedIn = sessionStorage.getItem('isLoggedIn');
+        if (isLoggedIn !== 'true') {
+          window.location.href = 'FormLogin.html';
+        }
+    </script>
+    <script src="/Javascript/Login.js"></script>
+</body>
+
+</html>
